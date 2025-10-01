@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Fredoka One', sans-serif;
+    color: #FF671F;
+}
+
+nav ul  {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Fredoka One', sans-serif;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: black;
+}
