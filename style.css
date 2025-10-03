@@ -13,6 +13,36 @@ nav ul  {
     padding: 0;
 }
 
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section {
+    padding: 60px 20px;
+}  
+
 body{
     color: black;
+    padding-top: 80px;
 }
+
+/* dunkin colour palette */
+.orange {
+    color: #FF671F; 
+}
+.magenta {
+    color: #DA1884;
+}
+
+/* background colours for each section : https://usbrandcolors.com/dunkin-donuts-colors/ */
+#home{
+    background-color:#DA1884
+}
+#menu{
+    background-color: #FF671F
+}
+
