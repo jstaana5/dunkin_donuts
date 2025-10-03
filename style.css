@@ -21,8 +21,20 @@ html{
     scroll-behavior:smooth;
 }
 
+/* scroll container */
+div.scroll-container {
+    background-color: #ffe6cc;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0px;
+}
+div.scroll-container img {
+    padding: 3px;
+}
+
 section {
     padding: 60px 20px;
+    font-family: 'Fredoka One', sans-serif;
 }  
 
 body{
@@ -40,9 +52,15 @@ body{
 
 /* background colours for each section : https://usbrandcolors.com/dunkin-donuts-colors/ */
 #home{
-    background-color:#DA1884
+    background-color:#ffe6cc
 }
 #menu{
-    background-color: #FF671F
+    background-color: #f596ca
+}
+#locations{
+    background-color:#f3c8ab ;
+}
+#contact{
+    background-color: #b00e67;
 }
 
