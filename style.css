@@ -3,6 +3,24 @@ h1 {
     color: #FF671F;
 }
 
+/* hero section */
+#hero {
+    width: 100%;
+    min-width: 60vh; /* adjusts with browser height */
+    overflow: hidden;
+}
+
+.hero-banner {
+    background-image: url('assets/AROD.jpg');
+    background-repeat: repeat-x; 
+    background-size: auto 100%;
+    background-position: left center;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav ul  {
     list-style: none;
     display: flex;
