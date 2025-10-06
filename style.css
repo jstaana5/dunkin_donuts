@@ -146,7 +146,7 @@ input[type=submit]:hover {
     transition: .2s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -164,7 +164,9 @@ input[type=submit]:hover {
 .menu-card .text {
     background-color: #f596ca;
     color: white;
-    font-size: 4vw;
-    padding: 16px 32px;
-  }
+    font-size: 3vw; 
+    padding: 0.5em 1em; 
+    border-radius: 6px;
+    max-width: 80%; 
+}
 
