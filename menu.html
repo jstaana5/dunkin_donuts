@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Locations | Dunkin Donuts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Dunkin Logo" class="logo">
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h1>
+            <span class="orange menu-intro" >Menu</span>
+        </h1>
+        <!-- made the font larger-->
+        <p class="menu-intro">Browse our menu!</p>
+        <!-- at least 6 menu items with hover option for price-->
+        <div class ="menu-grid">
+            <div class="menu-card">
+                <img src="assets/iced-latte.jpg" alt="Iced Latte" class="image">
+                <div class="middle">
+                    <div class="text">Iced Latte</div>
+                </div>
+                <h3 class="item-title">$5.67</h3>
+            </div>
+            <div class="menu-card">
+                <img src="assets/og-blend.jpg" alt="Original Coffee Blend" class="image">
+                <div class="middle">
+                    <div class="text">Original Blend</div>
+                </div>
+                <h3 class="item-title">$5.74</h3>
+            </div>
+            <div class="menu-card">
+                <img src="assets/refresher.jpg" alt="Blueberry Refresher" class="image">
+                <div class="middle">
+                    <div class="text">Blueberry Breeze Refresher</div>
+                </div>
+                <h3 class="item-title">$5.00</h3>
+            </div>
+            <div class="menu-card">
+                <img src="assets/bagel.jpg" alt="Bagel with cream cheese" class="image">
+                <div class="middle">
+                    <div class="text">Bagel n' Cheese</div>
+                </div>
+                <h3 class="item-title">$4.36</h3>
+            </div>
+            <div class="menu-card">
+                <img src="assets/croissant.jpg" alt="Croissant with cheese and turkey" class="image">
+                <div class="middle">
+                    <div class="text">Turkey, cheese, n' egg croissant</div>
+                </div>
+                <h3 class="item-title">$6.61</h3>
+            </div>
+            <div class="menu-card">
+                <img src="assets/saugage.jpg" alt="sausage" class="image">
+                <div class="middle">
+                    <div class="text">BEC wrap</div>
+                </div>
+                <h3 class="item-title">$4.23</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <p>Follow us: <a href="https://www.facebook.com/DunkinDonuts/">Facebook</a> | <a href="https://www.instagram.com/dunkin/">Instagram</a></p>
+        <p>Business Hours: Mon–Sun, 6am–10pm</p>
+    </footer>
+
+ 
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</head>
+
+
+
+
+
