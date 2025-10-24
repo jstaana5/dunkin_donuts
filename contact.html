@@ -5,13 +5,18 @@
 <title>Locations | Dunkin Donuts</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <body>
 
     <header>
         <img src="assets/logo.png" alt="Dunkin Logo" class="logo">
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+
         <nav>
-            <ul>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
@@ -22,11 +27,7 @@
 
     <section id="locations">
         <h2>
-<<<<<<< HEAD
             <span class="magenta menu-intro">Locations</span>        
-=======
-            <span class="magenta">Locations</span>        
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
             </h2>
             <p>Find a location near you!</p>
             <!-- embedd a google maps for only dunkin doughnut locations-->
@@ -62,6 +63,13 @@
         <p>Follow us: <a href="https://www.facebook.com/DunkinDonuts/">Facebook</a> | <a href="https://www.instagram.com/dunkin/">Instagram</a></p>
         <p>Business Hours: Mon–Sun, 6am–10pm</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 </body>
 </head>
 

@@ -31,23 +31,17 @@ nav ul  {
     padding: 0;
 }
 
-<<<<<<< HEAD
 nav ul li a {
     width: 100%;
     font-size: 25px;
     color: #b00e67;
     text-decoration: none;
-=======
-nav ul li a:hover::after {
-    width: 100%;
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
 }
 
 html{
     scroll-behavior:smooth;
 }
 
-<<<<<<< HEAD
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -64,10 +58,10 @@ html{
   }
 }
 @media (max-width: 768px) {
-  nav ul {
+  nav ul{
     display: none;
     flex-direction: column;
-    background-color: #ebcdad;
+    background-color: #ffffff;
     position: absolute;
     top: 80px;
     left: 0;
@@ -75,6 +69,7 @@ html{
     padding: 10px 20px;
     z-index: 1000;
   }
+
 
   nav ul.show {
     display: flex;
@@ -91,8 +86,6 @@ html{
 }
 
 
-=======
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
 /* scroll container */
 div.scroll-container {
     background-color: #ffe6cc;
@@ -111,11 +104,7 @@ section {
 
 body{
     color: black;
-<<<<<<< HEAD
     margin: 0;
-=======
-    padding-top: 80px;
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
 }
 
 /* dunkin colour palette */
@@ -190,17 +179,13 @@ input[type=submit]:hover {
     background-color: #f3c8ab;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
 .container {
     border-radius: 5px;
     background-color: #DA1884;
     padding: 20px;
 }
 
-<<<<<<< HEAD
 
 /* menu */
 
@@ -209,10 +194,6 @@ input[type=submit]:hover {
     margin-bottom: 0px;
 }
 
-=======
-/* menu */
-
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -261,7 +242,6 @@ input[type=submit]:hover {
     max-width: 80%; 
 }
 
-<<<<<<< HEAD
 .item-title {
   font-size: 3.5vw; /* scales depending on the screen width */
   color: #000000;
@@ -269,5 +249,3 @@ input[type=submit]:hover {
   text-align: center;
   margin-top: 7px;
 }
-=======
->>>>>>> d81389f888bba0266131bdc334a4a54a621ef6e1
