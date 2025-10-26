@@ -9,7 +9,6 @@ function addToCart(name, price) {
       break;
     }
   }
-  // kind of like a dictionary addition
   if (!found) {
     cart.push({ name: name, price: price, quantity: 1 });
   }
@@ -52,3 +51,19 @@ function updateCart() {
 
   cartTotal.textContent = "Total: $" + total.toFixed(2);
 }
+
+// open and close cart
+function toggleCart() {
+    const cartBox = document.getElementById("cart");
+    if (cartBox.style.display === "none" || cartBox.style.display === "") {
+      cartBox.style.display = "block";
+    } else {
+      cartBox.style.display = "none";
+    }
+  }
+  
+  function closeCart() {
+    document.getElementById("cart").style.display = "none";
+  }
+
+  

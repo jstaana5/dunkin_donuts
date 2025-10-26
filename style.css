@@ -268,21 +268,21 @@ input[type=submit]:hover {
   color: #FF671F;
 }
 
-#cart {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #ffe6cc;
-  border: 2px solid #b00e67;
-  padding: 15px;
-  width: 250px;
-  max-height: 300px;
-  overflow-y: auto;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  font-family: 'Fredoka One', sans-serif;
-}
 
+#cart {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ffe6cc;
+    border: 2px solid #b00e67;
+    padding: 15px;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Fredoka One', sans-serif;
+  }
 #cart h2 {
   margin-top: 0;
   color: #b00e67;
@@ -316,4 +316,6 @@ input[type=submit]:hover {
   margin-top: 10px;
   font-family: 'Fredoka One', sans-serif;
 }
+
+/*clikc on cart */
 

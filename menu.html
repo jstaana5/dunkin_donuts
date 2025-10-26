@@ -11,6 +11,7 @@
 <body>
 
     <header>
+        <button id="toggle-cart">🛒 Cart</button>
         <img src="assets/logo.png" alt="Dunkin Logo" class="logo">
         
         
@@ -44,8 +45,7 @@
                 <div class="price-row"> 
                     <h3 class="item-title">$5.67</h3>
                     <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Iced Latte', 5.67)"></i>
-                </div>
-                    
+                </div>   
             </div>
             <div class="menu-card">
                 <img src="assets/og-blend.jpg" alt="Original Coffee Blend" class="image">
@@ -103,12 +103,19 @@
     </section>
 
     <!-- floating fart -->
+    <div>
+        <button onclick="toggleCart()"> <h1>🛒 Cart</h1></button>
+    </div>
+    
+
     <div id="cart">
         <h2>Your Cart</h2>
         <ul id="cart-items"></ul>
         <p id="cart-total">Total: $0.00</p>
         <button onclick="clearCart()">Clear Cart</button>
+        <span onclick="closeCart()" class="w3-button w3-large w3-display-topright">&times;</span>
     </div>
+
 
 
     <!-- footer section -->
@@ -117,7 +124,7 @@
         <p>Business Hours: Mon–Sun, 6am–10pm</p>
     </footer>
 
- 
+
     <script>
         function toggleMenu() {
             const navLinks = document.getElementById("nav-links");
