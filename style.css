@@ -31,13 +31,60 @@ nav ul  {
     padding: 0;
 }
 
-nav ul li a:hover::after {
+nav ul li a {
     width: 100%;
+    font-size: 25px;
+    color: #b00e67;
+    text-decoration: none;
 }
 
 html{
     scroll-behavior:smooth;
 }
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #b00e67;
+  margin-left: 20px;
+}
+
+
+/* hambuerger menu for mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  nav ul{
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 
 /* scroll container */
 div.scroll-container {
@@ -57,7 +104,7 @@ section {
 
 body{
     color: black;
-    padding-top: 80px;
+    margin: 0;
 }
 
 /* dunkin colour palette */
@@ -132,13 +179,20 @@ input[type=submit]:hover {
     background-color: #f3c8ab;
 }
 
+
 .container {
     border-radius: 5px;
     background-color: #DA1884;
     padding: 20px;
 }
 
+
 /* menu */
+
+.menu-intro{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
 
 .menu-grid {
     display: grid;
@@ -186,5 +240,80 @@ input[type=submit]:hover {
     padding: 0.5em 1em; 
     border-radius: 6px;
     max-width: 80%; 
+}
+
+.item-title {
+  font-size: 4.0vw; /* scales depending on the screen width */
+  color: #000000;
+  font-family: 'Fredoka One', sans-serif;
+  text-align: center;
+  margin-top: 7px;
+}
+
+
+/* cart icon next to the price */
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 8px;
+}
+
+.add-to-cart {
+  color: #b00e67;
+  cursor: pointer;
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+.add-to-cart:hover {
+  color: #FF671F;
+}
+
+#cart {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffe6cc;
+  border: 2px solid #b00e67;
+  padding: 15px;
+  width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Fredoka One', sans-serif;
+}
+
+#cart h2 {
+  margin-top: 0;
+  color: #b00e67;
+  font-size: 1.2rem;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+#cart-total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#cart button {
+  background-color: #b00e67;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'Fredoka One', sans-serif;
 }
 

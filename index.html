@@ -4,24 +4,29 @@
     <title> Dunkin Donuts </title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">    <!-- font for dunkin title -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
 </head>
 
 
 
 <body>
-    <!-- header -->
     <header>
         <img src="assets/logo.png" alt="Dunkin Logo" class="logo">
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
     <!-- Hero Section -->
 <section id="hero">
@@ -33,9 +38,9 @@
 
     <section id="home">
         <h2> 
-            <span class="magenta">Home</span>        
+            <span class="magenta menu-intro">Home</span>        
         </h2>
-        <p>Welcome to the Dunkin Donuts homepage. </p>
+        <p class="menu-intro"> Welcome to the Dunkin Donuts homepage. </p>
         <p> Sign into the app to earn Dunkin rewards! </p>
 
         <!-- sliding gallery-->
@@ -57,6 +62,14 @@
         <p>Follow us: <a href="https://www.facebook.com/DunkinDonuts/">Facebook</a> | <a href="https://www.instagram.com/dunkin/">Instagram</a></p>
         <p>Business Hours: Mon–Sun, 6am–10pm</p>
     </footer>
+
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
 
 </body>
 </html>
