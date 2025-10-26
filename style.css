@@ -260,10 +260,9 @@ input[type=submit]:hover {
 }
 
 .add-to-cart {
-  color: #b00e67;
-  cursor: pointer;
-  font-size: clamp(1.5rem, 5vw, 5rem);
-}
+    color: #b00e67;
+    cursor: pointer;
+    font-size: clamp(1.5rem, 5vw, 3rem);}
 .add-to-cart:hover {
   color: #FF671F;
 }

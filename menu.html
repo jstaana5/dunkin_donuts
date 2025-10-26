@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Locations | Dunkin Donuts</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
     <header>
-        <button id="toggle-cart">🛒 Cart</button>
         <img src="assets/logo.png" alt="Dunkin Logo" class="logo">
         
         
@@ -44,7 +44,7 @@
                 </div>
                 <div class="price-row"> 
                     <h3 class="item-title">$5.67</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Iced Latte', 5.67)"></i>
+                    <button class="add-to-cart" onclick="addToCart('Iced Latter', 5.67)"> +</button>               
                 </div>   
             </div>
             <div class="menu-card">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="price-row">
                     <h3 class="item-title">$5.74</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Original Blend', 5.74)"></i>
+                    <button class="add-to-cart" onclick="addToCart('Original Blend', 5.74)"> +</button>               
                 </div>
             </div>
             <div class="menu-card">
@@ -64,9 +64,8 @@
                 </div>
                 <div class="price-row">
                     <h3 class="item-title">$5.00</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Blueberry Breeze Refresher', 5.00)"></i>
+                    <button class="add-to-cart" onclick="addToCart('Blueberry Breeze Refresher', 5.00)"> +</button>               
                 </div>
-               
             </div>
             <div class="menu-card">
                 <img src="assets/bagel.jpg" alt="Bagel with cream cheese" class="image">
@@ -75,7 +74,7 @@
                 </div>
                 <div class="price-row">
                     <h3 class="item-title">$4.36</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Bagel n Cheese', 4.36)"></i>
+                    <button class="add-to-cart" onclick="addToCart('Bagel n Cheese', 4.36)"> +</button>               
                 </div>
                 
             </div>
@@ -86,7 +85,7 @@
                 </div>
                 <div class="price-row">
                     <h3 class="item-title">$6.61</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('Turkey, Cheese, n Egg Croissant', 6.61)"></i>
+                    <button class="add-to-cart" onclick="addToCart('Turkey, Cheese, n Egg Croissant', 6.61)"> +</button>               
                 </div>
                 
             </div>
@@ -97,7 +96,7 @@
                 </div>
                 <div class="price-row">
                     <h3 class="item-title">$4.23</h3>
-                    <i class="fa fa-shopping-cart add-to-cart" onclick="addToCart('BEC Wrap', 4.23)"></i>
+                    <button class="add-to-cart" onclick="addToCart('BEC Wrap', 4.23)"> +</button>               
                 </div>
         </div>
     </section>
